@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental Company</title>
+    <link rel="stylesheet" href="Car Rental.css">
+</head>
+<body>
+    <header>
+        <h1>Car Rental Company</h1>
+        <nav>
+            <ul>
+                <li><a href="#shipment">Shipment</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="shipment">
+            <h2>Shipment Page</h2>
+            <div class="Toyota Machinery Plant">
+                <img src="C:\Users\USER\Downloads\FMchmhQWYAYEIxC.jpg" alt="Company Logo">
+                <h1>Car Rental Company</h1>
+                <p>Your Trusted Partner for Car Rentals</p>
+            </div>
+            <section id="vehicle-section">
+                <h2>Available Vehicles for Rent</h2>
+                <div class="vehicle-list">
+                    <div class="vehicle-card">
+                        <img src="C:\Users\USER\Downloads\FFnciTGWUAQhmGB.jpg" alt="Car 1">
+                        <h3>Car Make and Model 1</h3>
+                        <p>Year: 2023</p>
+                        <p>Color: White</p>
+                        <p>Price: $50/day</p>
+                        <button class="book-now-btn" onclick="Book()">Book Now</button>
+                    </div>
+                    <div class="vehicle-card">
+                        <img src="C:\Users\USER\Downloads\EnGBsarWEAABEfd.jpg" alt="Car 2">
+                        <h3>Car Make and Model 2</h3>
+                        <p>Year: 2022</p>
+                        <p>Color: Red</p>
+                        <p>Price: $60/day</p>
+                        <button class="book-now-btn" onclick="Book()">Book Now</button>
+                    </div>
+                    <div class="vehicle-card">
+                        <img src="C:\Users\USER\Downloads\FMchmhQWYAYEIxC.jpg" alt="Car 3">
+                        <h3>Car Make and Model 3</h3>
+                        <p>Year: 2022</p>
+                        <p>Color: Marrun</p>
+                        <p>Price: $60/day</p>
+                        <button class="book-now-btn" onclick="Book()">Book Now</button>
+                    </div>
+                </section>
+                <section id="booking-section">
+                    <h2>Booking Form</h2>
+                    <form id="booking-form">
+                        <div class="form-group">
+                            <label for="vehicle">Select Vehicle:</label>
+                            <select id="vehicle" name="vehicle" required>
+                                <option value="">-- Select Vehicle --</option>
+                                <option value="car1">Car Make and Model 1</option>
+                                <option value="car2">Car Make and Model 2</option>
+                                <!-- Add more vehicle options as needed -->
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="pickup-location">Pickup Location:</label>
+                            <input type="text" id="pickup-location" name="pickup-location" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pickup-date">Pickup Date:</label>
+                            <input type="date" id="pickup-date" name="pickup-date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pickup-time">Pickup Time:</label>
+                            <input type="time" id="pickup-time" name="pickup-time" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="dropoff-location">Drop-off Location:</label>
+                            <input type="text" id="dropoff-location" name="dropoff-location" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="dropoff-date">Drop-off Date:</label>
+                            <input type="date" id="dropoff-date" name="dropoff-date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="dropoff-time">Drop-off Time:</label>
+                            <input type="time" id="dropoff-time" name="dropoff-time" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="car-accessories">Car Accessories:</label>
+                            <input type="text" id="car-accessories" name="car-accessories">
+                        </div>
+                        <div class="form-group">
+                            <label for="insurance">Insurance:</label>
+                            <input type="checkbox" id="insurance" name="insurance">
+                        </div>
+                        <div class="form-group">
+                            <label for="fuel">Fuel Preferences:</label>
+                            <input type="radio" id="fuel-full" name="fuel" value="full">
+                            <label for="fuel-full">Full Tank</label>
+                            <input type="radio" id="fuel-return" name="fuel" value="return">
+                            <label for="fuel-return">Return Full</label>
+                        </div>
+                        <button type="submit">Submit Booking</button>
+                    </form>
+                </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <div class="contact-form">
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Your Car Rental Company</p>
+    </footer>
+</body>
+</html>
